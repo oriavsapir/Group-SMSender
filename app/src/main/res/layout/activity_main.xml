@@ -11,19 +11,42 @@
         android:id="@+id/urlEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="URL" />
+        android:hint="URL"
+        android:text="http://" />
 
     <EditText
         android:id="@+id/msgEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Message" />
+        android:hint="Message"
+        android:minLines="3"
+        android:gravity="top|start"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/letterCounterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/160"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#808080" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/sendButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send SMS"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp" />
 
     <TextView

@@ -4,6 +4,8 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     EditText msgEditText;
     Button sendButton;
     TextView responseTextView;
+    TextView letterCounterTextView;
 
     private static final int PERMISSION_REQUEST_SEND_SMS = 1;
 
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         msgEditText = findViewById(R.id.msgEditText);
         sendButton = findViewById(R.id.sendButton);
         responseTextView = findViewById(R.id.responseTextView);
+        letterCounterTextView = findViewById(R.id.letterCounterTextView);
 
         // set click listener for send button
         sendButton.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +59,21 @@ public class MainActivity extends AppCompatActivity {
                 String msg = msgEditText.getText().toString();
                 sendGetRequest(url, msg);
             }
+        });
+
+        // character count listener for msgEditText
+        msgEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                int currentCount = s.length();
+                letterCounterTextView.setText(currentCount + "/160");
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {}
         });
     }
 
