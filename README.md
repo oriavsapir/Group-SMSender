@@ -1,4 +1,4 @@
-# Send SMS to Group
+# Send SMS to Group 📱💌
 
 ## Overview
 
@@ -21,7 +21,7 @@ To use the app, follow these steps:
 1. Clone the repository: `git clone https://github.com/oriavsapir/Group-SMSender.git`
 2. Open the project in Android Studio
 3. Build and run the app on an Android device or emulator
-4. 
+
 ## APK Download
 
 You can download the latest version of the Send SMS to Group app from the [releases](https://github.com/oriavsapir/Group-SMSender/releases) page.
