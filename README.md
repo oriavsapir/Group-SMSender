@@ -13,8 +13,7 @@ Group SMSender is a robust Android application built to facilitate mass messagin
 
 ### Initial Setup
 
-- Navigate to the [releases](https://github.com/m/oriavsapir/Group-SMSender/releases) of the GitHub repository.
-- Download the latest APK file.
+- You can download the latest version of the Send SMS to Group app from the [releases](https://github.com/oriavsapir/Group-SMSender/releases) page.
 - Install the APK file on your Android device.
 - Grant necessary permissions when prompted.
 
@@ -27,20 +26,43 @@ The expected format in the URL should be like 'number,number' where numbers are 
 #### Sending Different Messages to Different Recipients
 
 The expected format in the URL should be like 'number:msg,number:msg' where numbers and messages are separated by commas. Example: '050...05531:Hello,0521615..02:Hi'.
-## screenshot
 
-## Disclaimer
+## Screenshots
+![WhatsApp Image 2023-08-02 at 10 59 15 (1)](https://github.com/oriavsapir/Group-SMSender/assets/85383966/f8a7bfc0-65c9-44c6-acb3-89b9a09bd668)
+![WhatsApp Image 2023-08-02 at 10 59 40 (1)](https://github.com/oriavsapir/Group-SMSender/assets/85383966/72ef9458-37d8-4d95-a882-7daf6e80c190)
+![WhatsApp Image 2023-08-02 at 10 59 02 (2)](https://github.com/oriavsapir/Group-SMSender/assets/85383966/d830ab5d-b1c6-43b0-8f72-512da50f8224)
 
-This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
 
-Please note that all SMS messages sent through this application come directly from your device. It is your responsibility to ensure that you have sufficient balance or an active SMS plan on your device to send SMS messages. Please check your device and your carrier's terms of service for any potential costs or restrictions.
+## Permissions
 
-## License
+The app requires the following permissions:
 
-This project is licensed under the MIT License - see the LICENSE file for details
+- `INTERNET`: To fetch the recipients' list from the provided URL.
+- `SEND_SMS`: To send SMS messages to the recipients.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Contributions to this project are welcome. If you find a bug or have an enhancement in mind, please feel free to open an issue or submit a pull request.
 
-Please make sure to update tests as appropriate.
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Disclaimer
+Please note that the Send SMS to Group app does not provide an SMS gateway or service. It utilizes the default SMS service on your Android device. You will be responsible for any costs or charges associated with sending SMS messages through your own service provider.
+
+Ensure that you have an active SMS plan or sufficient credit with your service provider before using this app to send SMS messages. The developers of this app are not responsible for any charges or fees incurred as a result of using the app.
+
+Use your own SMS service responsibly and in compliance with the terms and conditions of your service provider.
+
+The Send SMS to Group app is provided as-is without any warranties or guarantees. The developers of this app are not responsible for any damages or liabilities caused by the use or misuse of this software.
+
+Please use this app responsibly and ensure that you have the necessary permissions and legal rights to send SMS messages to the recipients. It is your responsibility to comply with applicable laws and regulations regarding SMS messaging and privacy.
+
+The app fetches the recipients' list from a provided URL, and it is your responsibility to ensure that the URL is secure and contains valid and authorized recipients' information. The developers of this app do not have control over the content or security of the provided URLs.
+
+By using the Send SMS to Group app, you agree to use it at your own risk. The developers of this app will not be held liable for any damages, losses, or legal issues arising from the use of this app.
+
+
+
+### Happy messaging! 📱💌
