@@ -20,8 +20,9 @@ Group SMSender is a robust Android application built to facilitate mass messagin
 ### How to Use
 
 #### Sending Same Message to Multiple Recipients
-
-The expected format in the URL should be like 'number,number' where numbers are separated by commas. Example: '050...05531,0521615..02'.
+* You must to send it as POST requsts!
+* you can add "token" from the app. and hanlde it in the server side for maintain security.
+* The expected format in the URL should be like 'number,number' where numbers are separated by commas. Example: '050...05531,0521615..02'.
 
 #### Sending Different Messages to Different Recipients
 
